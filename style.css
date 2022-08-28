@@ -143,3 +143,39 @@ hr {
     font-size: 14px;
     background-color: #f0ced3;
 }
+
+/* Media Queries */
+/* For Mobile Devices */
+@media only screen and (max-width: 668px) {
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player,
+    .blog {
+        flex-direction: column;
+    }
+
+    .courses {
+        margin-top: 10px;
+    }
+}
+
+/* Tablet Devices */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
